@@ -1,0 +1,5 @@
+{
+  "htdocs": "./htdocs",
+  "morgan-format": "tiny",
+  "port": 8765
+}

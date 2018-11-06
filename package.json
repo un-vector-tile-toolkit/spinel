@@ -1,0 +1,28 @@
+{
+  "name": "spinel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu/spinel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hfu/spinel/issues"
+  },
+  "homepage": "https://github.com/hfu/spinel#readme",
+  "dependencies": {
+    "@mapbox/mbtiles": "^0.10.0",
+    "config": "^2.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "spdy": "^3.4.7"
+  }
+}

@@ -1,3 +1,5 @@
+*.ndjson
+
 # Logs
 logs
 *.log
