@@ -20,9 +20,10 @@
   "dependencies": {
     "@mapbox/mbtiles": "^0.10.0",
     "config": "^2.0.1",
-    "cors": "^2.8.4",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "spdy": "^3.4.7"
+    "spdy": "^3.4.7",
+    "zlib": "^1.0.5"
   }
 }
