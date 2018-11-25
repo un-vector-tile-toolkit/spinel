@@ -40,7 +40,7 @@
       "source-layer": "roadl",
       "minzoom": 6,
       "maxzoom": 22,
-      "paint": {"line-color": "rgba(21, 101, 192, 1)"}
+      "paint": {"line-color": "rgba(194, 24, 91, 1)"}
     },
     {
       "id": "riverl",
@@ -124,6 +124,63 @@
       "filter": ["all", ["==", "$type", "LineString"]],
       "layout": {},
       "paint": {"line-color": "rgba(0, 172, 193, 1)"}
+    },
+    {
+      "id": "boundary",
+      "type": "fill",
+      "source": "hands-on",
+      "source-layer": "boundary",
+      "minzoom": 11
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "waterway",
+      "paint": {"line-color": "rgba(21, 101, 192, 1)"}
+    },
+    {
+      "id": "highway",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "highway",
+      "paint": {"line-color": "rgba(194, 24, 91, 1)"}
+    },
+    {
+      "id": "building-line",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "building",
+      "filter": ["all"]
+    },
+    {
+      "id": "building-fill",
+      "type": "fill",
+      "source": "hands-on",
+      "source-layer": "building",
+      "filter": ["all", ["==", "$type", "Polygon"]],
+      "layout": {},
+      "paint": {"fill-color": "rgba(189, 189, 189, 1)"}
+    },
+    {
+      "id": "railway",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "railway"
+    },
+    {
+      "id": "route",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "route",
+      "paint": {"line-color": "rgba(230, 81, 0, 1)", "line-width": 3}
+    },
+    {
+      "id": "aeroway",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "aeroway",
+      "paint": {"line-width": 5}
     }
   ],
   "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
