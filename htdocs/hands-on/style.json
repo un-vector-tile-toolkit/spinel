@@ -1,6 +1,7 @@
 {
   "version": 8,
   "name": "hands-on example",
+  "metadata": {},
   "sources": {
     "hands-on": {
       "type": "vector",
@@ -174,6 +175,14 @@
       "source": "hands-on",
       "source-layer": "aeroway",
       "paint": {"line-width": 5}
+    },
+    {
+      "id": "place",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "place",
+      "layout": {"text-field": "{name}", "text-font": ["sans"]},
+      "paint": {"text-color": "rgba(0, 0, 0, 1)"}
     }
   ],
   "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
