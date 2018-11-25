@@ -94,7 +94,14 @@ app.get(`/zxy/:t/:z/:x/:y.pbf`, async (req, res) => {
 app.get(`/fonts/:fontstack/:range.pbf`, (req, res) => {
   res.set('content-type', 'application/x-protpbuf')
   res.set('content-encoding', 'gzip')
-  res.send(fs.readFileSync(`fonts/${req.params.fontstack}/${req.params.range}.pbf.gz`))
+  for (const fontstack of req.params.fontstack.split(',')) {
+    const path = `fonts/${fontstack}/${req.params.range}.pbf.gz`
+    if (fs.existsSync(path)) {
+      res.send(fs.readFileSync(path))
+      return
+    }
+  }
+  res.status(404).send(`font not found: ${req.params.fontstack}/${req.params.range}`)
 })
 
 module.exports = app
