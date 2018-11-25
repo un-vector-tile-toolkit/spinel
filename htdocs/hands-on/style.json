@@ -30,7 +30,7 @@
       "source": "hands-on",
       "source-layer": "coastl",
       "minzoom": 6,
-      "maxzoom": 10,
+      "maxzoom": 22,
       "paint": {"line-color": "rgba(21, 101, 192, 1)"}
     },
     {
@@ -39,7 +39,7 @@
       "source": "hands-on",
       "source-layer": "roadl",
       "minzoom": 6,
-      "maxzoom": 7,
+      "maxzoom": 22,
       "paint": {"line-color": "rgba(21, 101, 192, 1)"}
     },
     {
@@ -48,7 +48,7 @@
       "source": "hands-on",
       "source-layer": "riverl",
       "minzoom": 6,
-      "maxzoom": 10,
+      "maxzoom": 22,
       "paint": {"line-color": "rgba(21, 101, 192, 1)"}
     },
     {
@@ -56,14 +56,74 @@
       "type": "fill",
       "source": "hands-on",
       "source-layer": "intwatera",
-      "minzoom": 0,
-      "maxzoom": 24
+      "minzoom": 6,
+      "maxzoom": 22
     },
     {
       "id": "polbndl",
       "type": "line",
       "source": "hands-on",
-      "source-layer": "polbndl"
+      "source-layer": "polbndl",
+      "maxzoom": 22
+    },
+    {
+      "id": "raill",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "raill",
+      "maxzoom": 22
+    },
+    {
+      "id": "airp",
+      "type": "circle",
+      "source": "hands-on",
+      "source-layer": "airp",
+      "maxzoom": 22,
+      "layout": {},
+      "paint": {"circle-radius": 3}
+    },
+    {
+      "id": "builtupp",
+      "type": "circle",
+      "source": "hands-on",
+      "source-layer": "builtupp",
+      "maxzoom": 22,
+      "paint": {"circle-radius": 2}
+    },
+    {
+      "id": "landuse-fill",
+      "type": "fill",
+      "source": "hands-on",
+      "source-layer": "landuse",
+      "minzoom": 11,
+      "maxzoom": 22,
+      "filter": ["all", ["==", "$type", "Polygon"]],
+      "paint": {"fill-opacity": 1, "fill-color": "rgba(38, 166, 154, 1)"}
+    },
+    {
+      "id": "landuse-line",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "landuse",
+      "paint": {"line-color": "rgba(0, 137, 123, 1)"}
+    },
+    {
+      "id": "natural-fill",
+      "type": "fill",
+      "source": "hands-on",
+      "source-layer": "natural",
+      "filter": ["all", ["==", "$type", "Polygon"]],
+      "layout": {},
+      "paint": {"fill-color": "rgba(38, 198, 218, 1)"}
+    },
+    {
+      "id": "natural-line",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "natural",
+      "filter": ["all", ["==", "$type", "LineString"]],
+      "layout": {},
+      "paint": {"line-color": "rgba(0, 172, 193, 1)"}
     }
   ],
   "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
