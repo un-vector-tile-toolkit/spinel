@@ -90,4 +90,11 @@ app.get(`/zxy/:t/:z/:x/:y.pbf`, async (req, res) => {
   sendTile(req, res)
 })
 
+// route to the fonts
+app.get(`/fonts/:fontstack/:range.pbf`, (req, res) => {
+  res.set('content-type', 'application/x-protpbuf')
+  res.set('content-encoding', 'gzip')
+  res.send(fs.readFileSync(`fonts/${req.params.fontstack}/${req.params.range}.pbf.gz`))
+})
+
 module.exports = app

@@ -1,12 +1,6 @@
 {
   "version": 8,
-  "name": "Empty Style",
-  "metadata": {
-    "mapbox:autocomposite": false,
-    "mapbox:type": "template",
-    "maputnik:renderer": "mbgljs",
-    "openmaptiles:version": "3.x"
-  },
+  "name": "hands-on example",
   "sources": {
     "hands-on": {
       "type": "vector",
@@ -16,7 +10,7 @@
       "tiles": ["http://vectortiles.xyz:8765/zxy/hands-on/{z}/{x}/{y}.pbf"]
     }
   },
-  "glyphs": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "http://vectortiles.xyz:8765/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
