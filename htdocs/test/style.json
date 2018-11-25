@@ -4,6 +4,8 @@
   "sources": {
     "vstd": {
       "type": "vector",
+      "minZoom": 0,
+      "maxZoom": 14,
       "tiles": ["http://vectortiles.xyz:8765/zxy/test/{z}/{x}/{y}.pbf"],
       "minzoom": 10,
       "maxzoom": 15
@@ -21,6 +23,7 @@
       "type": "fill",
       "source": "vstd",
       "source-layer": "31",
+      "filter": ["all", ["==", "$type", "Polygon"]],
       "layout": {},
       "paint": {"fill-color": "rgba(195, 193, 193, 1)"}
     },
@@ -29,6 +32,7 @@
       "type": "line",
       "source": "vstd",
       "source-layer": "31",
+      "filter": ["all", ["==", "$type", "LineString"]],
       "paint": {"line-color": "rgba(86, 85, 85, 1)"}
     },
     {
@@ -44,10 +48,23 @@
     {"id": "73", "type": "line", "source": "vstd", "source-layer": "73"},
     {"id": "53", "type": "line", "source": "vstd", "source-layer": "53"},
     {
-      "id": "51",
+      "id": "51海-ライン",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "51",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "$type", "LineString"]],
+      "layout": {},
+      "paint": {}
+    },
+    {
+      "id": "51海-ポリゴン",
       "type": "fill",
       "source": "vstd",
       "source-layer": "51",
+      "minzoom": 14,
+      "maxzoom": 24,
       "filter": ["all", ["==", "$type", "Polygon"]],
       "layout": {},
       "paint": {"fill-color": "rgba(185, 210, 232, 1)"}
