@@ -181,7 +181,7 @@
       "type": "symbol",
       "source": "hands-on",
       "source-layer": "place",
-      "layout": {"text-field": "{name}", "text-font": ["sans"]},
+      "layout": {"text-field": "{name}", "text-font": ["sans", "sans-si", "sans-ta"]},
       "paint": {"text-color": "rgba(0, 0, 0, 1)"}
     }
   ],
