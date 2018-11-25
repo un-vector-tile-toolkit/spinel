@@ -4,5 +4,9 @@
   "port": 8765,
   "privkey": "./config/privkey.pem",
   "cert": "./config/fullchain.pem",
-  "ca": "./config/chain.pem"
+  "ca": "./config/chain.pem",
+  "tz": {
+    "hands-on": 6,
+    "test": 10
+  }
 }

@@ -1,4 +1,5 @@
 *.ndjson
+mbtiles/hands-on/6-46-30.mbtiles
 
 # Logs
 logs

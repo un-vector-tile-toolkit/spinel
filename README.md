@@ -10,6 +10,14 @@ $ npm install
 ```
 
 # usage
+## copy the mbtiles file
+For example, 
+```console
+$ cp somewhere/0-0-0.mbtiles ./mbtiles/hands-on/
+```
+Then the data will be available at http://localhost:8765/zxy/hands-on/{z}/{x}/{y}.pbf.
+
+## run the server
 ```console
 $ node index.js
 ```
