@@ -4,9 +4,8 @@
   "sources": {
     "vstd": {
       "type": "vector",
-      "minZoom": 0,
-      "maxZoom": 14,
       "tiles": ["http://vectortiles.xyz:8765/zxy/test/{z}/{x}/{y}.pbf"],
+      "attribution": "Geospatial Information Authority of Japan",
       "minzoom": 10,
       "maxzoom": 15
     }
