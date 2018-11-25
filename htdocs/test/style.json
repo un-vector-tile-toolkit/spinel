@@ -1,0 +1,101 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
+  },
+  "sources": {
+    "vstd": {
+      "type": "vector",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tiles": ["http://vectortiles.xyz:8765/zxy/test/{z}/{x}/{y}.pbf"],
+      "minzoom": 10,
+      "maxzoom": 15
+    }
+  },
+  "glyphs": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {"background-color": "rgba(245, 245, 245, 1)"}
+    },
+    {
+      "id": "31建築物-ポリゴン",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "31",
+      "layout": {},
+      "paint": {"fill-color": "rgba(195, 193, 193, 1)"}
+    },
+    {
+      "id": "31建築物-外周線",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "31",
+      "paint": {"line-color": "rgba(86, 85, 85, 1)"}
+    },
+    {
+      "id": "52水涯線",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "52",
+      "paint": {"line-color": "rgba(0, 0, 255, 1)"}
+    },
+    {"id": "27", "type": "line", "source": "vstd", "source-layer": "27"},
+    {"id": "75", "type": "line", "source": "vstd", "source-layer": "75"},
+    {"id": "63", "type": "line", "source": "vstd", "source-layer": "63"},
+    {"id": "73", "type": "line", "source": "vstd", "source-layer": "73"},
+    {"id": "53", "type": "line", "source": "vstd", "source-layer": "53"},
+    {
+      "id": "51",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "51",
+      "filter": ["all", ["==", "$type", "Polygon"]],
+      "layout": {},
+      "paint": {"fill-color": "rgba(185, 210, 232, 1)"}
+    },
+    {"id": "82", "type": "line", "source": "vstd", "source-layer": "82"},
+    {"id": "10", "type": "line", "source": "vstd", "source-layer": "10"},
+    {"id": "12", "type": "line", "source": "vstd", "source-layer": "12"},
+    {"id": "74", "type": "line", "source": "vstd", "source-layer": "74"},
+    {"id": "55", "type": "line", "source": "vstd", "source-layer": "55"},
+    {"id": "32", "type": "line", "source": "vstd", "source-layer": "32"},
+    {"id": "29", "type": "line", "source": "vstd", "source-layer": "29"},
+    {"id": "71", "type": "line", "source": "vstd", "source-layer": "71"},
+    {"id": "43", "type": "line", "source": "vstd", "source-layer": "43"},
+    {"id": "61", "type": "line", "source": "vstd", "source-layer": "61"},
+    {"id": "59", "type": "line", "source": "vstd", "source-layer": "59"},
+    {
+      "id": "76",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "76",
+      "minzoom": 0
+    },
+    {
+      "id": "72",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "72",
+      "minzoom": 0
+    },
+    {
+      "id": "58",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "58",
+      "minzoom": 0
+    },
+    {"id": "20", "type": "line", "source": "vstd", "source-layer": "20"},
+    {"id": "30", "type": "line", "source": "vstd", "source-layer": "30"},
+    {"id": "41", "type": "line", "source": "vstd", "source-layer": "41"}
+  ],
+  "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "id": "76j1nqpia"
+}
