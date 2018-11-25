@@ -1,0 +1,71 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
+  },
+  "sources": {
+    "hands-on": {
+      "type": "vector",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "minzoom": 6,
+      "maxzoom": 15,
+      "tiles": ["http://vectortiles.xyz:8765/zxy/hands-on/{z}/{x}/{y}.pbf"]
+    }
+  },
+  "glyphs": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {"background-color": "rgba(238, 238, 238, 1)"}
+    },
+    {
+      "id": "coastl",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "coastl",
+      "minzoom": 6,
+      "maxzoom": 10,
+      "paint": {"line-color": "rgba(21, 101, 192, 1)"}
+    },
+    {
+      "id": "roadl",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "roadl",
+      "minzoom": 6,
+      "maxzoom": 7,
+      "paint": {"line-color": "rgba(21, 101, 192, 1)"}
+    },
+    {
+      "id": "riverl",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "riverl",
+      "minzoom": 6,
+      "maxzoom": 10,
+      "paint": {"line-color": "rgba(21, 101, 192, 1)"}
+    },
+    {
+      "id": "inwatera",
+      "type": "fill",
+      "source": "hands-on",
+      "source-layer": "intwatera",
+      "minzoom": 0,
+      "maxzoom": 24
+    },
+    {
+      "id": "polbndl",
+      "type": "line",
+      "source": "hands-on",
+      "source-layer": "polbndl"
+    }
+  ],
+  "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "id": "w771tz9g4"
+}
