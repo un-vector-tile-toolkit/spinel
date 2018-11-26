@@ -7,7 +7,7 @@
       "type": "vector",
       "tiles": ["http://vectortiles.xyz:8765/zxy/test/{z}/{x}/{y}.pbf"],
       "attribution": "Geospatial Information Authority of Japan",
-      "minzoom": 10,
+      "minzoom": 0,
       "maxzoom": 15
     }
   },
@@ -19,6 +19,15 @@
       "paint": {"background-color": "rgba(245, 245, 245, 1)"}
     },
     {
+      "id": "Coastline",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "Coastline",
+      "minzoom": 0,
+      "maxzoom": 10,
+      "paint": {"line-color": "rgba(0, 0, 255, 1)"}
+    },
+    {
       "id": "31建築物-ポリゴン",
       "type": "fill",
       "source": "vstd",
@@ -28,19 +37,19 @@
       "paint": {"fill-color": "rgba(195, 193, 193, 1)"}
     },
     {
+      "id": "52水涯線",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "52",
+      "paint": {"line-color": "rgba(0, 0, 255, 1)"}
+    },
+    {
       "id": "31建築物-外周線",
       "type": "line",
       "source": "vstd",
       "source-layer": "31",
       "filter": ["all", ["==", "$type", "LineString"]],
       "paint": {"line-color": "rgba(86, 85, 85, 1)"}
-    },
-    {
-      "id": "52水涯線",
-      "type": "line",
-      "source": "vstd",
-      "source-layer": "52",
-      "paint": {"line-color": "rgba(0, 0, 255, 1)"}
     },
     {"id": "27", "type": "line", "source": "vstd", "source-layer": "27"},
     {"id": "75", "type": "line", "source": "vstd", "source-layer": "75"},
