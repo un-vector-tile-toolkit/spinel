@@ -11,8 +11,8 @@
       "tiles": ["http://vectortiles.xyz:8765/zxy/hands-on/{z}/{x}/{y}.pbf"]
     }
   },
-  "glyphs": "http://vectortiles.xyz:8765/fonts/{fontstack}/{range}.pbf",
   "sprite": "http://vectortiles.xyz:8765/sprite",
+  "glyphs": "http://vectortiles.xyz:8765/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -79,20 +79,30 @@
     },
     {
       "id": "airp",
-      "type": "circle",
+      "type": "symbol",
       "source": "hands-on",
       "source-layer": "airp",
       "maxzoom": 22,
-      "layout": {},
-      "paint": {"circle-radius": 3}
+      "layout": {"icon-image": "airport_11", "icon-size": 1},
+      "paint": {}
     },
     {
       "id": "builtupp",
-      "type": "circle",
+      "type": "symbol",
       "source": "hands-on",
       "source-layer": "builtupp",
       "maxzoom": 22,
-      "paint": {"circle-radius": 2}
+      "layout": {
+        "icon-image": "circle_stroked_11",
+        "text-size": 12,
+        "text-font": ["sans"],
+        "text-field": "{nam}",
+        "text-anchor": "top"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)"
+      }
     },
     {
       "id": "landuse-fill",
@@ -187,12 +197,264 @@
       "paint": {"line-width": 5}
     },
     {
+      "id": "leisure",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "leisure",
+      "minzoom": 0,
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{leisure}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "icon-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "historic",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "historic",
+      "minzoom": 0,
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{historic}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "icon-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "military",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "military",
+      "minzoom": 0,
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{military}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "icon-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "man_made",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "man_made",
+      "minzoom": 0,
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{man_made}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "icon-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "power",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "power",
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{power}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
+      "id": "sport",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "sport",
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{sport}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
+      "id": "office",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "office",
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{office}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
+      "id": "craft",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "craft",
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{craft}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
+      "id": "public_transport",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "public_transport",
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{public_transport}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
+      "id": "tourism",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "tourism",
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{tourism}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
+      "id": "shop",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "shop",
+      "minzoom": 0,
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{shop}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
+      "id": "amenity",
+      "type": "symbol",
+      "source": "hands-on",
+      "source-layer": "amenity",
+      "layout": {
+        "icon-image": "marker_11",
+        "text-font": ["sans"],
+        "text-field": "{amenity}",
+        "text-size": 8,
+        "text-anchor": "top",
+        "icon-anchor": "bottom"
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "icon-halo-width": 1,
+        "icon-halo-color": "rgba(238, 238, 238, 1)"
+      }
+    },
+    {
       "id": "place",
       "type": "symbol",
       "source": "hands-on",
       "source-layer": "place",
-      "layout": {"text-field": "{name}", "text-font": ["sans", "sans-si", "sans-ta"]},
-      "paint": {"text-color": "rgba(0, 0, 0, 1)"}
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["sans", "sans-si", "sans-ta"]
+      },
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-color": "rgba(238, 238, 238, 1)",
+        "text-halo-width": 1
+      }
     }
   ],
   "id": "w771tz9g4"
