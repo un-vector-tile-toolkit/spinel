@@ -25,7 +25,7 @@
       "source": "hands-on",
       "source-layer": "Coastline",
       "minzoom": 0,
-      "maxzoom": 5,
+      "maxzoom": 6,
       "paint": {"line-color": "rgba(21, 101, 192, 1)"}
     },
     {
