@@ -12,6 +12,7 @@
     }
   },
   "glyphs": "http://vectortiles.xyz:8765/fonts/{fontstack}/{range}.pbf",
+  "sprite": "http://vectortiles.xyz:8765/sprite",
   "layers": [
     {
       "id": "background",
@@ -185,6 +186,5 @@
       "paint": {"text-color": "rgba(0, 0, 0, 1)"}
     }
   ],
-  "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
   "id": "w771tz9g4"
 }
