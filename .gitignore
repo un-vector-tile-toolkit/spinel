@@ -1,5 +1,6 @@
 *.ndjson
 mbtiles/hands-on/6-46-30.mbtiles
+mbtiles/test
 
 # Logs
 logs
