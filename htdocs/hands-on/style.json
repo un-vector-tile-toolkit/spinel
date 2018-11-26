@@ -20,6 +20,15 @@
       "paint": {"background-color": "rgba(238, 238, 238, 1)"}
     },
     {
+      "id": "Coastline",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "Coastline",
+      "minzoom": 0,
+      "maxzoom": 10,
+      "paint": {"line-color": "rgba(0, 0, 255, 1)"}
+    },
+    {
       "id": "coastl",
       "type": "line",
       "source": "hands-on",
