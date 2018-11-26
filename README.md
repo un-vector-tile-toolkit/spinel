@@ -135,3 +135,6 @@ DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 ```
+
+## About the sprite data
+The sprite data included in this repository is from [osm-bright-style](https://github.com/openmaptiles/osm-bright-gl-style). (c) 2016, KlokanTech.com & OpenMapTiles conributors. (c) 2014, Mapbox.
