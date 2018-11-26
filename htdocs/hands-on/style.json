@@ -5,7 +5,7 @@
   "sources": {
     "hands-on": {
       "type": "vector",
-      "minzoom": 6,
+      "minzoom": 0,
       "maxzoom": 15,
       "attribution": "OpenStreetMap (c) OpenStreetMap contributors / Global Map Sri Lanka (c) ISCGM / Survey Department, Sri Lanka",
       "tiles": ["http://vectortiles.xyz:8765/zxy/hands-on/{z}/{x}/{y}.pbf"]
