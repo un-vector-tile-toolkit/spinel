@@ -1,10 +1,12 @@
 {
   "version": 8,
   "name": "",
+  "metadata": {},
   "sources": {
     "vstd": {
       "type": "vector",
       "tiles": ["http://vectortiles.xyz:8765/zxy/test/{z}/{x}/{y}.pbf"],
+      "attribution": "Geospatial Information Authority of Japan",
       "minzoom": 10,
       "maxzoom": 15
     }
@@ -21,6 +23,7 @@
       "type": "fill",
       "source": "vstd",
       "source-layer": "31",
+      "filter": ["all", ["==", "$type", "Polygon"]],
       "layout": {},
       "paint": {"fill-color": "rgba(195, 193, 193, 1)"}
     },
@@ -29,6 +32,7 @@
       "type": "line",
       "source": "vstd",
       "source-layer": "31",
+      "filter": ["all", ["==", "$type", "LineString"]],
       "paint": {"line-color": "rgba(86, 85, 85, 1)"}
     },
     {
@@ -41,13 +45,32 @@
     {"id": "27", "type": "line", "source": "vstd", "source-layer": "27"},
     {"id": "75", "type": "line", "source": "vstd", "source-layer": "75"},
     {"id": "63", "type": "line", "source": "vstd", "source-layer": "63"},
-    {"id": "73", "type": "line", "source": "vstd", "source-layer": "73"},
+    {
+      "id": "73等高線",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "73",
+      "paint": {"line-color": "rgba(216, 67, 21, 1)"}
+    },
     {"id": "53", "type": "line", "source": "vstd", "source-layer": "53"},
     {
-      "id": "51",
+      "id": "51海-ライン",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "51",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "$type", "LineString"]],
+      "layout": {},
+      "paint": {}
+    },
+    {
+      "id": "51海-ポリゴン",
       "type": "fill",
       "source": "vstd",
       "source-layer": "51",
+      "minzoom": 14,
+      "maxzoom": 24,
       "filter": ["all", ["==", "$type", "Polygon"]],
       "layout": {},
       "paint": {"fill-color": "rgba(185, 210, 232, 1)"}
