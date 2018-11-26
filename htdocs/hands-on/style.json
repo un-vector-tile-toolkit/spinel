@@ -22,11 +22,11 @@
     {
       "id": "Coastline",
       "type": "line",
-      "source": "vstd",
+      "source": "hands-on",
       "source-layer": "Coastline",
       "minzoom": 0,
-      "maxzoom": 10,
-      "paint": {"line-color": "rgba(0, 0, 255, 1)"}
+      "maxzoom": 5,
+      "paint": {"line-color": "rgba(21, 101, 192, 1)"}
     },
     {
       "id": "coastl",
