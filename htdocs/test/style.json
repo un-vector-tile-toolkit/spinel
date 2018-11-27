@@ -2,6 +2,8 @@
   "version": 8,
   "name": "",
   "metadata": {},
+  "center": [130.705088, 32.802095],
+  "zoom": 15.7,
   "sources": {
     "vstd": {
       "type": "vector",
