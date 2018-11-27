@@ -3,7 +3,7 @@
   "name": "hands-on example",
   "metadata": {},
   "center": [79.86773, 6.92407],
-  "zoom": [13.14],
+  "zoom": 13.14,
   "sources": {
     "hands-on": {
       "type": "vector",
